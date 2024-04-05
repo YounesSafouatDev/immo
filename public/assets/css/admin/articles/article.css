@@ -1,0 +1,121 @@
+/* MAIN */
+main {
+	width: 100%;
+	padding: 24px 20px 20px 20px;
+}
+
+main .title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+main .breadcrumbs {
+	display: flex;
+	grid-gap: 6px;
+}
+
+main .breadcrumbs li,
+main .breadcrumbs li a {
+	font-size: 14px;
+}
+
+main .breadcrumbs li a {
+	color: var(--blue);
+}
+
+main .breadcrumbs li a.active,
+main .breadcrumbs li.divider {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+/* Section blog */
+
+.section_blog {
+    width: 100%;
+    margin-block: 20px;
+}
+.blog_infos {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 30px;
+}
+.blog_img {
+    width: 100%;
+    height: auto;
+}
+.images {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px
+}
+.images img {
+    width: 200px;
+    height: 200px;
+}
+.blog_infos_title {
+    font-size: 34px;
+}
+.blog_writer {
+    margin-top: -14px;
+    font-size: 14px;
+    color: rgb(146, 146, 146);
+}
+.blog_categ {
+    padding: 10px;
+    background-color: var(--blue);
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.blog_description {
+    line-height: 1.8;
+    margin-top: -24px;
+    text-align: justify;
+}
+.blog_btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+.btn_warning , .btn_danger{
+    padding: 14px 16px;
+    color: whitesmoke;
+    transition: all .5s ease-in;
+}
+.btn_warning {
+    background-color: orangered;
+}
+.btn_warning:hover {
+    background-color: orange;
+}
+.btn_danger {
+    background-color: rgb(201, 0, 0);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn_danger:hover {
+    background-color: red;
+}
+
+@media screen and (max-width:1024px) and (min-width:900px) {
+}
+@media screen and (max-width:900px) and (min-width:500px) {
+    .blog_img {
+        border: 1px solid gainsboro;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .blog_title {
+        font-size: 30px;
+    }
+}

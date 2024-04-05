@@ -1,0 +1,132 @@
+/* MAIN */
+main {
+	width: 100%;
+	padding: 24px 20px 20px 20px;
+}
+
+main .title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+main .breadcrumbs {
+	display: flex;
+	grid-gap: 6px;
+}
+
+main .breadcrumbs li,
+main .breadcrumbs li a {
+	font-size: 14px;
+}
+
+main .breadcrumbs li a {
+	color: var(--blue);
+}
+
+main .breadcrumbs li a.active,
+main .breadcrumbs li.divider {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+
+.utilisateur_infos {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	row-gap: 20px;
+}
+.infos_image {
+	width: 250px;
+	height: 250px;
+	object-fit: fill;
+	object-position: center;
+	border-radius: 10%;
+}
+.utilisateur_infos h2{
+	color: var(--blue);
+}
+.role {
+	font-size: 14px;
+}
+.infos_desc {
+	width: 70%;
+	font-size: 17px;
+	text-align: justify;
+}
+.infos_perso {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	row-gap: 10px;
+}
+.infos_perso a {
+	font-size: 17px;
+	padding-left: 10px;
+	color: black;
+	transition: all 0.5s ease-in;
+}
+.infos_perso a:hover {
+	color: var(--blue);
+}
+.infos_perso span i{
+	font-size: 145x;
+	padding-right: 10px;
+}
+.infos_perso a i{
+	font-size: 145x;
+	padding-right: 10px;
+}
+.fa-whatsapp {
+	color: green;
+}
+.fa-facebook {
+	color: var(--blue);
+}
+.infos_perso a i.fa-instagram {
+	color: whitesmoke;
+	padding: 3px;
+	margin-right: 3px;
+	background: linear-gradient(to left, rgb(153, 102, 255), rgb(255, 102, 204));
+}
+.btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+.edit {
+	background-color: orangered;
+	color: whitesmoke;
+	padding: 10px 12px;
+	transition: all 0.5s ease;
+}
+.danger {
+	background-color: rgb(185, 0, 0);
+	padding: 10px 12px;
+	border: none;
+	color: whitesmoke;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.edit:hover {
+	background-color: rgb(229, 149, 0);
+}
+.danger:hover {
+	background-color: rgb(222, 0, 0);
+}
+@media screen and (max-width:500px) {
+	.infos_desc {
+		width: 90%;
+	}
+	.infos_perso {
+		width: 90%;
+		align-items: start;
+	}
+}

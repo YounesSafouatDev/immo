@@ -1,0 +1,188 @@
+
+main {
+	width: 100%;
+	padding: 24px 20px 20px 20px;
+}
+
+main .title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+main .breadcrumbs {
+	display: flex;
+	grid-gap: 6px;
+}
+
+main .breadcrumbs li,
+main .breadcrumbs li a {
+	font-size: 14px;
+}
+
+main .breadcrumbs li a {
+	color: var(--blue);
+}
+
+main .breadcrumbs li a.active,
+main .breadcrumbs li.divider {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+
+.ajouter_utilis {
+    margin-block: 30px;
+    margin-inline: auto;
+    width: 80%;
+}
+.utilis_form, .url_form {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+	box-shadow: 10px 10px 10px 20px gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.url_form {
+    margin-block: 20px;
+}
+.url_form .input_group {
+    width: 30%;
+}
+.input_group label, .radios label {
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+.input_group {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    row-gap: 10px;
+}
+.input {
+    width: 90%;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+	outline: none;
+	transition: all 0.4s ease-in;
+}
+.input:focus{
+    border: none;
+	box-shadow: 0 0 0 1px var(--blue), 0 0 0 4px var(--light-blue);
+}
+.radios {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 20px;
+}
+.check {
+    width: 100%;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 5px;
+}
+.required, .message {
+    color: red;
+}
+.message {
+    font-size: 11px;
+    margin-top: -10px;
+}
+.title_infos {
+    margin-top: 10px;
+    text-align: center;
+}
+.btn, .mdp_btn {
+    padding: 12px 16px;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: whitesmoke;
+    font-size: 16px;
+    border: none;
+    transition: all 0.4s ease-in;
+}
+.btn:hover, .mdp_btn:hover {
+    background-color: darkblue;
+}
+.mdp_form {
+    margin-block: 40px;
+    margin-inline: auto;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+	box-shadow: 10px 10px 10px 20px gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+}
+.mdp_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6px;
+}
+.mdp_btn {
+    align-self: center;
+}
+.error {
+    width: 80%;
+    font-size: 17px;
+    margin-block: 30px;
+    margin-inline: auto;
+    text-align: center;
+    color: red;
+    padding: 10px;
+    background-color: rgba(255, 62, 62, 0.436);
+}
+
+@media screen and (max-width:900px) and (max-width:500px) {
+    .ajouter_utilis {
+        margin-block: 20px;
+        width: 100%;
+    }
+    .input_group {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+    .check {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ajouter_utilis {
+        margin-block: 20px;
+        width: 100%;
+    }
+    .input_group {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+    .check {
+        padding-left: 10px;
+    }
+    .mdp_form {
+        width: 100%;
+    }
+}

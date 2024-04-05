@@ -1,0 +1,132 @@
+.section_message {
+    width: 80%;
+    padding: 20px;
+    margin-block: 20px;
+    margin-inline: auto;
+    background-color: #005CE6;
+    color: dark#005CE6;
+    text-align: center;
+    display: block;
+}
+.sign_up {
+    width: 90%;
+    margin-block: 20px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 20px;
+}
+.sign_up_title {
+    text-align: center;
+    margin-block: 20px;
+}
+.form_image, .register_form {
+    width: 50%;
+    height: 450px;
+}
+.register_form .form_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.up_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.sign_group {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    column-gap: 10px;
+}
+.group {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 10px;
+}
+.radios {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.group_input {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+}
+.check_group {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+}
+.check_group a {
+    color: #005CE6;
+}
+.check_group a:hover {
+    color: #181823;
+    text-decoration: underline #005CE6;
+}
+.required, .message {
+    color: red;
+    font-size: 12px;
+}
+.btn_form {
+    height: 40px;
+    width: 100px;
+    font-size: 1em;
+    cursor: pointer;
+    align-self: center;
+    background-color: #005CE6;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.btn_form:hover {
+    background-color: #181823;
+}
+@media screen and (max-width:900px) and (max-width:500px){
+    .sign_up {
+        width: 100%;
+        margin: 20px 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .sign_up {
+        width: 100%;
+        margin: 20px auto;
+        padding-inline: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        column-gap: 0px;
+    }
+    .sign_up_title {
+        margin-block: 10px;
+        font-size: 20px;
+    }
+    .form_image {
+        display: none;
+    }
+    .register_form {
+        width: 100%;
+        height: 500px;
+    }
+    .group_input {
+        padding-left: 2px;
+    }
+}

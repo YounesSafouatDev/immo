@@ -1,0 +1,403 @@
+.simple_blog {
+    margin-block: 30px;
+    width: 100%;
+    height: 140px;
+    background-color: rgba(220, 220, 220, 0.475);
+}
+.simple_text {
+    margin-inline: auto;
+    width: 90%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+.simple_title {
+    color: blue;
+    font-size: 34px;
+}
+.simple_link {
+    font-size: 16px;
+}
+.simple_link a {
+    color: black;
+}
+.simple_link a:hover {
+    color: blue;
+} 
+.section_simple {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+.simple_infos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+}
+.simple_img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel div {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.simple_infos_title {
+    font-size: 34px;
+}
+.simple_writer {
+    margin-top: -14px;
+    font-size: 14px;
+    color: rgb(146, 146, 146);
+}
+.simple_description {
+    line-height: 1.5;
+}
+.simple_infos_links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+.infos_tags, .infos_btns {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 10px;
+}
+.infos_btns {
+    justify-content: center;
+}
+.infos_btns a, .btn {
+    width: 150px;
+    padding-block: 14px;
+    background-color: gainsboro;
+    text-align: center;
+    color: blue;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+.infos_btns a:hover, .btn:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.tag {
+    padding: 10px;
+    border:1px solid gray;
+    color: blue;
+    border-radius: 10px;
+}
+.simple_search {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+}
+.simple_categories {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 20px;
+}
+.simple_categories p, .simple_tops .tops_title, .images_blogs p {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.simple_categories a{
+    font-size: 16px;
+    padding-block: 10px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    transition: all 0.3s ease-in;
+}
+.simple_categories a:hover {
+    color: blue;
+    background-color: gainsboro;
+}
+.simple_tops {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+}
+.simple_tops p{
+    width: 100%;
+    text-align: center;
+}
+.simple_tops a {
+    width: 100%;
+    font-size: 15px;
+    text-align: start;
+    color: black;
+    transition: all 0.5s ease-in;
+}
+.simple_tops a:hover {
+    color: blue;
+}
+.section_premium {
+    margin-bottom: 20px;
+    width: 100%;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+}
+.premium_title {
+    width: 100%;
+    text-align: center;
+}
+.premium_cards {
+    font-size: 16px;
+    width: 100%;
+    flex: 0 0 100%; 
+    display: flex;
+    justify-content: start;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    scroll-snap-type: x mandatory;  
+    column-gap: 10px;
+}
+.premium_cards::-webkit-scrollbar {
+    display: none; 
+}
+.premium {
+    scroll-snap-align: start;
+    border: 1px solid black;
+    height: 380px;
+    min-width: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 10px;
+}
+.premium_agency {
+    padding: 2px 6px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+.premium_info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.premium_avatar {
+    width: 32px;
+    height: 32px;
+    background-image: url('/assets/images/9440461.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.premium_name {
+    color: black;
+    transition: color 0.5s ease-in;
+}
+.premium_name:hover {
+    color: blue;
+}
+.premium_image {
+    width: 100%;
+    object-fit: fill;
+    height: 220px;
+}
+.premium_text {
+    padding-left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 10px;
+}
+.premium_text a {
+    color: grey;
+    transition: all 0.5s ease-in ;
+}
+.premium_text a:hover {
+    color: blue;
+    text-decoration: underline blue;
+}
+.premium_details {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 10px;
+}
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.btn {
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px) and (min-width:900px) {
+    .section_simple {
+        width: 100%;
+        padding-inline: 10px;
+        column-gap: 20px;
+    }
+    .simple_writer {
+        line-height: 1.3;
+    }
+    .infos_btns a{
+        font-size: 16px;
+        width: 120px;
+        padding-block: 12px;
+    }
+    .tag {
+        font-size: 16px;
+    }
+    .simple_tops a {
+        font-size: 14px;
+    }
+    .premium {
+        min-width: 325px;
+    }
+}
+@media screen and (max-width:900px) and (min-width:500px) {
+    .section_simple {
+        width: 100%;
+        padding-inline: 10px;
+        column-gap: 0px;
+        row-gap: 30px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .simple_infos {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .simple_img {
+        border: 1px solid gainsboro;
+    }
+    .simple_search {
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .simple_categories, .simple_tops {
+        width: 50%;
+    }
+    .simple_tops a {
+        font-size: 16px;
+        text-align: center;
+    }
+    .premium {
+        min-width: 365px;
+    }
+}
+@media screen and (max-width:500px) {
+    .simple_blog {
+        margin-block: 10px;
+        height: 100px;
+    }
+    .simple_title {
+        font-size: 24px;
+    }
+    .simple_img {
+        height: 300px;
+    }
+    .section_simple {
+        width: 100%;
+        padding-inline: 10px;
+        column-gap: 0px;
+        row-gap: 30px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .simple_infos {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .simple_img {
+        border: 1px solid gainsboro;
+    }
+    .simple_search {
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .simple_categories, .simple_tops {
+        width: 50%;
+    }
+    .simple_tops a {
+        font-size: 14px;
+        text-align: center;
+    }
+    .infos_btns {
+        flex-wrap: nowrap;
+    } 
+    .infos_btns a {
+        width: 100px;
+        padding-block: 10px;
+        font-size: 12px;
+    }
+    .simple_infos_title {
+        font-size: 20px;
+        white-space: pre;
+    }
+    .simple_description {
+        line-height: 1.4;
+        font-size: 14px;
+    }
+    .tag {
+        font-size: 12px;
+    }
+    .premium {
+        min-width: 310px;
+    }
+}

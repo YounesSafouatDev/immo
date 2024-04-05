@@ -1,0 +1,152 @@
+.section_message {
+    width: 80%;
+    padding: 20px;
+    margin-block: 20px;
+    margin-inline: auto;
+    background-color: rgba(0, 201, 0, 0.543);
+    color: green;
+    text-align: center;
+    display: block;
+}
+.section_error {
+    width: 80%;
+    padding: 20px;
+    margin-block: 20px;
+    margin-inline: auto;
+    background-color: rgba(255, 0, 0, 0.463);
+    color: rgb(216, 0, 0);
+    text-align: center;
+    display: block;
+}
+.login {
+    width: 80%;
+    margin-block: 20px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    column-gap: 10px;
+    padding: 10px;
+}
+.form_image{
+    width: 50%;
+}
+.login_form {
+    width: 40%;
+}
+.form_title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.sign_in {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+.sign_group {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 10px;
+}
+.group_input {
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    outline: none;
+    border: 1px solid gainsboro;
+    transition: all 0.4s ease-in;
+}
+.group_input:focus {
+    box-shadow: 0 0 0 1px blue, 0 0 0 4px rgb(88, 88, 246);
+}
+.required {
+    color: red;
+}
+.message_email, .message_password {
+    font-size: 12px;
+    color: red;
+}
+.sign_check_link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+}
+.forgot {
+    color: #181823;
+}
+.forgot:hover {
+    color: #005CE6;
+}
+.btn_form {
+    padding: 10px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    align-self: center;
+    background-color: #005CE6;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.btn_form:hover {
+    background-color: #181823;
+}
+.account {
+    margin-block: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.account a {
+    color: #005CE6;
+}
+.account a:hover {
+    color: #181823;
+    text-decoration: underline #005CE6;
+}
+@media screen and (max-width:1024px) and (min-width:900px){
+    .login {
+        width: 90%;
+    }
+    .login_form {
+        width: 50%;
+    }
+}
+@media screen and (max-width:900px) and (min-width:500px){
+    .login {
+        width: 90%;
+    }
+    .login_form {
+        width: 50%;
+    }
+    .form_image{
+        height: 300px;
+    }
+}
+@media screen and (max-width:500px) {
+    .login {
+        width: 100%;
+        padding: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .login_form {
+        width: 100%;
+    }
+    .form_image {
+        display: none;
+    }
+}
