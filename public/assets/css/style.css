@@ -1,20 +1,21 @@
 :root {
-    --bg-color :black;
-    --logo-color:#005CE6;
-    --primary-color:#181823;
-    --second-color:whitesmoke;
+    --bg-color: black;
+    --logo-color: #005CE6;
+    --primary-color: #181823;
+    --second-color: whitesmoke;
     --surface-color: ghostwhite;
     --curve: 40;
     --transition-time: 2.3s;
     --color-primary-white: rgb(240, 240, 240);
-} 
+}
+
 .banner {
     margin-top: 0px;
     margin-bottom: 40px;
     padding: 10px;
     width: 100%;
     height: 450px;
-    background-image: url('../images/Maison.webp');
+    background-image: url('https://expertimmo.ma/assets/images/home.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +25,7 @@
     align-items: center;
     row-gap: 30px;
 }
+
 .banner_title {
     width: 50%;
     height: 50%;
@@ -42,9 +44,11 @@
     border-radius: 20px;
     transition: background 0.5s ease-in-out;
 }
+
 .banner_link:hover {
     background-color: var(--logo-color);
 }
+
 .main {
     width: 90%;
     margin-inline: auto;
@@ -61,16 +65,19 @@
     align-items: center;
     row-gap: 10px;
 }
+
 .text h2 {
     color: #005CE6;
 }
-.text p{
+
+.text p {
     text-align: center;
 }
+
 /* list categories */
 .list_categories {
     width: 70%;
-    margin-block:30px;
+    margin-block: 30px;
     margin-inline: auto;
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +86,7 @@
     column-gap: 10px;
     row-gap: 20px;
 }
+
 .category {
     width: 200px;
     height: 100px;
@@ -87,12 +95,14 @@
     align-items: center;
     column-gap: 10px;
 }
+
 .category .category_image {
     width: 50%;
     height: 100%;
     object-fit: fill;
     border-radius: 10%;
 }
+
 .category_text {
     display: flex;
     flex-direction: column;
@@ -100,20 +110,25 @@
     align-items: start;
     row-gap: 10px;
 }
+
 .category_link {
     color: var(--logo-color);
     transition: all 0.5s ease-in;
 }
+
 .category_link:hover {
     color: black;
 }
+
 .category_text span {
     font-size: 12px;
     color: grey;
 }
 
 /* Properties */
-.properties_text, .articles_text, .annonceurs_text {
+.properties_text,
+.articles_text,
+.annonceurs_text {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -124,13 +139,16 @@
     color: #005CE6;
 }
 
-.property_link, .article_link, .annonceur_link {
+.property_link,
+.article_link,
+.annonceur_link {
     text-decoration: none;
     color: black;
     transition: color 0.4s ease-in;
 }
 
-.property_link:hover, .annonceur_link:hover {
+.property_link:hover,
+.annonceur_link:hover {
     color: #005CE6;
 }
 
@@ -151,12 +169,15 @@
     margin: 10px 0;
     transition: ease all 0.5s;
     perspective: 1200px;
+
     &:hover {
         .cover {
             transform: rotateX(0deg) rotateY(-180deg);
+
             &:before {
                 transform: translateZ(30px);
             }
+
             &:after {
                 background-color: black;
             }
@@ -174,6 +195,7 @@
             }
         }
     }
+
     .cover {
         position: absolute;
         height: 100%;
@@ -183,6 +205,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+
         &:before {
             content: '';
             position: absolute;
@@ -197,6 +220,7 @@
             transform-style: preserve-3d;
             transform: translateZ(0px);
         }
+
         &:after {
             content: '';
             position: absolute;
@@ -208,6 +232,7 @@
             transition: ease all 1.3s;
             background: rgba(0, 0, 0, .4);
         }
+
         h3 {
             font-weight: 600;
             position: absolute;
@@ -220,6 +245,7 @@
             font-size: 1.1em;
             transform: translateZ(0px);
         }
+
         .price {
             font-weight: 200;
             position: absolute;
@@ -233,6 +259,7 @@
             transform: translateZ(0px);
         }
     }
+
     .card-back {
         position: absolute;
         height: 100%;
@@ -244,6 +271,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         .back_link {
             transform-style: preserve-3d;
             transition: ease transform var(--transition-time), ease background .5s;
@@ -256,6 +284,7 @@
             padding: 14px 32px;
             outline: none;
             text-decoration: none;
+
             &:hover {
                 background-color: #005CE6;
                 color: whitesmoke;
@@ -295,7 +324,7 @@
         transition: opacity .2s ease-out;
     }
 
-   .article_title {
+    .article_title {
         font-weight: 700;
         position: absolute;
         inset: auto auto 30px 30px;
@@ -305,39 +334,48 @@
         color: #000000;
         text-shadow: 1px 2px 1px whitesmoke;
     }
-    p,a {
+
+    p,
+    a {
         position: absolute;
         opacity: 0;
         max-width: 80%;
         transition: opacity .3s ease-out;
     }
+
     p {
         inset: auto auto 80px 30px;
     }
+
     a {
         inset: auto auto 10px 30px;
         color: inherit;
         text-decoration: none;
     }
+
     &:hover .article_title {
         inset: auto auto 220px 30px;
         transition: inset .3s ease-out;
         color: #000000;
     }
+
     &:hover p {
         color: #000000;
         opacity: 1;
         transition: opacity .5s .1s ease-in;
     }
+
     &:hover a {
         opacity: 1;
         transition: opacity .5s .1s ease-in;
     }
+
     &:hover img {
         transition: opacity .3s ease-in;
         opacity: 0.2;
     }
 }
+
 .article_button {
     background-color: #005CE6;
     padding: 14px 10px;
@@ -346,6 +384,7 @@
 .icon {
     vertical-align: middle;
 }
+
 /* Annonceur */
 .agents_cards {
     margin-block: 20px;
@@ -356,6 +395,7 @@
     gap: 20px;
     align-items: center;
 }
+
 .border {
     height: 369px;
     width: 290px;
@@ -363,6 +403,7 @@
     border-radius: 10px;
     transition: border 1s;
     position: relative;
+
     &:hover {
         border: 1px solid white;
     }
@@ -382,20 +423,25 @@
     align-items: center;
     position: relative;
 }
+
 .card0 {
     background: center center no-repeat;
     background-size: 300px;
+
     &:hover {
         background: left center no-repeat;
         background-size: 600px;
+
         a {
             opacity: 1;
         }
+
         .fa {
             opacity: 1;
         }
     }
 }
+
 .card0 .agent_link {
     color: white;
     margin: 20px;
@@ -403,11 +449,12 @@
     transition: opacity 1s;
     font-size: 20px;
 }
-  
+
 .fa {
     opacity: 0;
     transition: opacity 1s;
 }
+
 .icons {
     position: absolute;
     height: 130px;
@@ -416,8 +463,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
 }
+
 .icons a {
     fill: #fff;
     color: #fff;
@@ -429,108 +477,140 @@
     .banner_title {
         width: 60%;
     }
+
     .main {
         width: 90%;
         margin-inline: auto;
     }
+
     .properties_cards {
         width: 100%;
         justify-content: center;
         animation-range: entry 40% cover 40%;
     }
+
     .property {
         min-width: 300px;
     }
+
     .articles_cards {
         justify-content: center;
         animation-range: entry 40% cover 40%;
     }
+
     .article {
         width: 280px;
     }
 
 }
+
 @media screen and (max-width:900px) and (min-width:750px) {
     .list_categories {
         width: 100%;
     }
+
     .banner_title {
         width: 70%;
     }
+
     .card {
         width: 300px;
     }
+
     /* About */
     .about_text .about_title {
         font-size: 1.7em;
     }
+
     .about_list {
         row-gap: 6px;
     }
+
     .main {
         width: 100%;
         margin-inline: 0;
         padding-inline: 10px;
     }
+
     .properties_text,
     .articles_text {
         justify-content: space-between;
     }
-    .agents_cards, .articles_cards, .properties_cards {
+
+    .agents_cards,
+    .articles_cards,
+    .properties_cards {
         animation-range: entry 30% cover 30%;
     }
+
     .list_properties a {
         width: 300px;
     }
 }
+
 @media screen and (max-width:749px) and (min-width:501px) {
     .list_categories {
         width: 100%;
     }
+
     /* Section banner */
     .banner_title {
         width: 70%;
     }
+
     .list_categories {
         width: 100%;
     }
+
     /* About */
     .about_text .about_title {
         font-size: 1.6em;
     }
+
     .about_list {
         row-gap: 6px;
     }
+
     .main {
         width: 100%;
         margin-inline: 0;
         padding-inline: 10px;
     }
+
     .properties_text,
     .articles_text {
         justify-content: space-between;
     }
-    .agents_cards, .articles_cards, .properties_cards {
+
+    .agents_cards,
+    .articles_cards,
+    .properties_cards {
         animation-range: entry 30% cover 30%;
     }
+
     .list_properties a {
         width: 300px;
     }
 }
+
 @media screen and (max-width:500px) {
+
     /* Section banner */
     .banner_title {
         width: 100%;
         font-size: 2em;
     }
+
     .list_categories {
         width: 100%;
     }
+
     /* Types */
     .properties_types .types_description {
         width: 100%;
         font-size: 16px;
     }
+
     /* About  */
     .about {
         height: 800px;
@@ -539,50 +619,66 @@
         row-gap: 10px;
         padding-inline: 10px;
     }
-    .about_img, .about_text {
+
+    .about_img,
+    .about_text {
         width: 100%;
     }
+
     .about_text .about_title {
         font-size: 1.8em;
     }
+
     .about_list {
         row-gap: 10px;
     }
+
     /* Properties */
-    .properties_text .text_title .agents_text .text_title{
-       font-size: 20px;
+    .properties_text .text_title .agents_text .text_title {
+        font-size: 20px;
     }
+
     .properties_cards .card {
         border: 1px solid #181823;
     }
+
     /* Services */
     .service {
         width: 150px;
     }
+
     .service_description {
         font-size: 14px;
         text-align: center;
     }
+
     .main {
         width: 100%;
         padding-inline: 6px;
     }
+
     .text_title {
         font-size: 20px;
     }
-    .properties_text,.articles_text {
+
+    .properties_text,
+    .articles_text {
         justify-content: space-between;
     }
-    .agents_cards, .articles_cards, .properties_cards {
+
+    .agents_cards,
+    .articles_cards,
+    .properties_cards {
         animation-range: entry 20% cover 20%;
     }
+
     .services_list .card {
         position: relative;
         width: 360px;
         height: 300px;
     }
+
     .list_properties a {
         width: 300px;
     }
 }
-

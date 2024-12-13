@@ -181,4 +181,20 @@ class UtilisateurController extends Controller
         $utilisateur->forceDelete();
         return redirect('admin/utilisateurs/trash')->with(['message'=>'L\'article a été Supprimé']);
     }
+    public function validateUser(Request $request, $id)
+{
+    $utilisateur = User::findOrFail($id);
+    
+    // Check if the admin has checked the validation checkbox
+    if ($request->has('validated')) {
+        $utilisateur->email_verified_at = now(); 
+    } else {
+        $utilisateur->email_verified_at = null; 
+    }
+
+    $utilisateur->save();
+
+    return redirect()->back()->with('success', 'Utilisateur validé avec succès');
+}
+
 }

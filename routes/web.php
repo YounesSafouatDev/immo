@@ -54,7 +54,8 @@ Route::prefix('admin/')->group(function () {
     Route::get('articles/trash', [ArticleController::class, 'trash'])->name('trash');
     Route::post('articles/restore', [ArticleController::class, 'do_restore'])->name('restore');
     Route::delete('articles/force/{id}', [ArticleController::class, 'forceDelete'])->name('force');
-
+    
+    Route::post('utilisateurs/validate/{id}', [UtilisateurController::class, 'validateUser'])->name('utilisateurs.validate')->middleware(['auth','admin']);
     Route::post('utilisateurs/restore', [UtilisateurController::class, 'do_restore'])->name('utilisateurs.restore');
     Route::delete('utilisateurs/force/{id}', [UtilisateurController::class, 'forceDelete'])->name('utilisateurs.force');
     Route::delete('utilisateurs/deleteAll', [UtilisateurController::class, 'deleteAll'])->name('utilisateurs.deleteAll');
@@ -67,10 +68,10 @@ Route::prefix('admin/')->group(function () {
     Route::get('annonces/premium', [AnnonceController::class, 'premium'])->name('annonces.premium');
     Route::get('annonces/trash', [AnnonceController::class, 'trash'])->name('annonces.trash');
     Route::delete('annonces/deleteAll', [AnnonceController::class, 'deleteAll'])->name('annonces.deleteAll');
-
     Route::resource('annonces', AnnonceController::class);
     Route::resource('articles', ArticleController::class);
     Route::resource('utilisateurs', UtilisateurController::class);
+    
     
 });
 
